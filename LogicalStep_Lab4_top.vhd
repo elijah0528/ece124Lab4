@@ -4,22 +4,20 @@ USE ieee.numeric_std.ALL;
 
 -- Team members: Elijah Kurien and Wilson Chen
 
-ENTITY LogicalStep_Lab4_top IS
-   PORT
-	(
-   clkin_50	    : in	std_logic;							-- The 50 MHz FPGA Clockinput
-	rst_n			: in	std_logic;							-- The RESET input (ACTIVE LOW)
-	pb_n			: in	std_logic_vector(3 downto 0); -- The push-button inputs (ACTIVE LOW)
- 	sw   			: in  	std_logic_vector(7 downto 0); -- The switch inputs
-   leds			: out 	std_logic_vector(7 downto 0);	-- for displaying the the lab4 project details
+ENTITY LogicalStep_Lab4_top IS PORT (
+   	clkin_50	: in	std_logic; -- The 50 MHz FPGA Clockinput
+	rst_n		: in	std_logic; -- The RESET input (ACTIVE LOW)
+	pb_n		: in	std_logic_vector(3 downto 0); -- The push-button inputs (ACTIVE LOW)
+ 	sw   		: in  	std_logic_vector(7 downto 0); -- The switch inputs
+   	leds		: out 	std_logic_vector(7 downto 0); -- for displaying the the lab4 project details
 	-------------------------------------------------------------
 	-- you can add temporary output ports here if you need to debug your design 
 	-- or to add internal signals for your simulations
 	-------------------------------------------------------------
 	
-   seg7_data 	: out 	std_logic_vector(6 downto 0); -- 7-bit outputs to a 7-segment
-	seg7_char1  : out	std_logic;							-- seg7 digi selectors
-	seg7_char2  : out	std_logic							-- seg7 digi selectors
+   	seg7_data 	: out 	std_logic_vector(6 downto 0); -- 7-bit outputs to a 7-segment
+	seg7_char1	: out	std_logic;							-- seg7 digi selectors
+	seg7_char2	: out	std_logic							-- seg7 digi selectors
 	
 	-- Outputs for waveform
 	-- sim_sm_clken, sim_blink_sig 											:  out std_logic;

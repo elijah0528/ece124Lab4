@@ -6,11 +6,11 @@ use ieee.numeric_std.all;
 
 Entity StateMachine IS Port
 (
-	clk_in, reset, sm_clken, NSOut, EWOut, blink_sig								: IN std_logic;
+	clk_in, reset, sm_clken, NSOut, EWOut, blink_sig			: IN std_logic;
 	
-	NSClear, EWClear,NSCrossing, EWCrossing 								: out std_logic;
-	NSgreen, NSyellow, NSred, EWgreen, EWyellow, EWred				: OUT std_logic;
-	FourBitNumber																: OUT std_logic_vector(3 downto 0)
+	NSClear, EWClear,NSCrossing, EWCrossing 					: out std_logic;
+	NSgreen, NSyellow, NSred, EWgreen, EWyellow, EWred			: OUT std_logic;
+	FourBitNumber												: OUT std_logic_vector(3 downto 0)
 );
 END ENTITY;
  
