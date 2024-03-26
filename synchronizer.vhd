@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- Team members: Elijah Kurien and Wilson Chen
 
 entity synchronizer is port (
 

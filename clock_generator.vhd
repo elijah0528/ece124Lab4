@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- Team members: Elijah Kurien and Wilson Chen
+
 -- mode is the boolean input to select the clocking outputs for LogicalStep board OR simulation operation
 -- clk input is the LogicalStep 50MHz clock input
 -- sm_clock is to be connected to the state mackine and other registers in the pipeline (1 Hz in real time)

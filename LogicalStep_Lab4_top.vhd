@@ -1,7 +1,8 @@
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
+
+-- Team members: Elijah Kurien and Wilson Chen
 
 ENTITY LogicalStep_Lab4_top IS
    PORT

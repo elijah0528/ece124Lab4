@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- Team members: Elijah Kurien and Wilson Chen
+
 Entity State_Machine_Example IS Port
 (
  clk_input, reset, I0, I1, I2			: IN std_logic;

@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- Team members: Elijah Kurien and Wilson Chen
+
 Entity StateMachine IS Port
 (
 	clk_in, reset, sm_clken, NSOut, EWOut, blink_sig								: IN std_logic;
